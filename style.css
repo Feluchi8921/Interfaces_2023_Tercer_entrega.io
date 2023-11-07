@@ -1,0 +1,1868 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+}
+/*------------------------------Colores-----------------------------*/
+:root {
+  --blanco: #f7f7f7f7;
+  --blancoHover: #d3d3d3;
+  --negro: #262626;
+  --primario: #4e595e;
+  --primarioSombra1: #364045;
+  --primarioSombra2: #262626;
+  --primarioSombra3: #2f3538;
+  --estado: #9fd402;
+  --estadoHover: #86b602;
+  --acento: #f5d221;
+  --peligro: #f53e21;
+  --secundarioLuz1: #74a8ab;
+  --acento2: #bc3dc2;
+  --secundario: #318185;
+}
+body {
+  background-color: var(--primarioSombra1);
+}
+
+/*------------------------------Fuentes-----------------------------*/
+
+h1 {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 24 px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+}
+
+/*------------------------------Nav---------------------------------*/
+.navDesktop {
+  display: none;
+}
+.navMobil {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.stick {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav,
+.navMobil {
+  width: 100%;
+  height: 50px;
+  background: var(--negro);
+  opacity: 90%;
+}
+.btn-nav {
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  padding: 2px;
+}
+.usuario {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+.btn-nav {
+  width: max-content;
+  height: max-content;
+  margin-left: 6px;
+  background-color: transparent;
+  color: var(--blanco);
+  border: transparent;
+  align-items: center;
+}
+
+.flechaAbajo {
+  width: 12px;
+  height: 6px;
+}
+/*---Desplegable---*/
+
+.mostrar {
+  display: flex;
+}
+
+.desplegable.cerrar {
+  /*cierro el desplegable*/
+  display: none;
+}
+
+.desplegable {
+  width: min-content;
+  height: min-content;
+  background-color: var(--primarioSombra2);
+  display: none;
+  position: absolute;
+  min-width: 0px;
+  padding: 10px;
+}
+.desplegableUsuario {
+  position: absolute;
+  left: -30px;
+}
+.desplegableCarrito {
+  position: absolute;
+  left: -160px;
+  width: max-content;
+}
+
+.desplegableCarrito img.producto {
+  width: 80px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.desplegableCarrito img.separador {
+  width: 200px;
+}
+.alignCenter {
+  display: flex;
+  align-items: center;
+}
+.justifyCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.productoPrecio {
+  display: flex;
+  justify-content: center;
+}
+button.ingresar,
+button.continuar {
+  width: max-content;
+  height: max-content;
+  border-radius: 4px;
+  align-items: center;
+  padding: 6px;
+}
+button.continuar {
+  color: var(--blanco);
+}
+
+button.ingresar {
+  color: var(--negro);
+  font-size: 16px;
+}
+button.continuar {
+  background-color: var(--acento);
+}
+
+button.ingresar {
+  background-color: var(--blanco);
+}
+.siri {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.btn-menu {
+  display: none;
+  margin-left: 10px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+img.cruz {
+  width: 15px;
+  height: 15px;
+  margin-left: 80px;
+}
+
+.dropdown:hover .desplegable {
+  display: block;
+}
+
+.rotar {
+  transform: rotate(-90deg);
+}
+
+.flechaArriba {
+  transform: rotate(-180deg);
+  width: 40px;
+  height: 40px;
+}
+
+.navMobil img.logoHamburguesa,
+.navMobil img.avatar,
+.navMobil img.logoCarritoMas1 {
+  width: 20px;
+  height: 20px;
+  align-items: center;
+}
+.navMobil img.logoPagina {
+  margin-left: 20px;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
+
+/*---------------------------Container Mobil-----------------------------*/
+.container {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+/*---------------------------Footer--------------------------------------*/
+.footerOculto {
+  display: none;
+}
+
+.footerMobil {
+  color: var(--blanco);
+  display: block;
+  margin-right: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 18px;
+  font-weight: bolder;
+}
+footer{
+  background: var(--primarioSombra2);
+  height: 500px;
+  padding-bottom:  30px;
+ 
+}
+.footerContainerMobil span{
+  display: block;
+}
+.footerContainerMobil .redesFooter{
+  display: flex;
+}
+
+span.footerAcento{
+  margin-top: 20px;
+  font-weight: normal;
+  
+}
+.redesFooter{
+  display: flex;
+  justify-content: left;
+  padding-right: 6px;
+  margin-bottom: 20px;
+}
+.redesFooter .footerAcento{
+  margin: 8px;
+}
+span.redesFooter{
+  padding: 0%;
+}
+.centrado{
+  margin-top: 40px;
+}
+.footerDesplegable{
+  display: none;
+}
+.footerDesplegable.show{
+  display: block;
+}
+.dDesplegable.show{
+  display: block;
+}
+.footerContainerMobil .logoPagina{
+  margin-top: 20px ;
+
+}
+
+/* slider grande
+--------------- o ----------- */
+.containerGrande {
+  display: flex;
+  flex-flow: column wrap;
+}
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none inside;
+}
+
+ul.slider {
+  display: flex;
+  justify-content: center;
+}
+ul.slider img {
+  opacity: 0;
+  transition: opacity 1s;
+  position: absolute;
+  top: 10%;
+  width: 380px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+ul.slider img:first-child {
+  opacity: 1;
+}
+ul.slider img:target {
+  opacity: 1;
+}
+.sliderNav {
+  display: flex;
+  justify-content: center;
+}
+.menu {
+  position: relative;
+  top: 240px;
+}
+.menu li {
+  display: inline;
+}
+.menu a {
+  text-decoration: none;
+  padding: 5px;
+  cursor: default;
+}
+a:hover .circle {
+  cursor: pointer;
+  fill: var(--secundarioLuz1);
+}
+
+/*Font carousel*/
+.h3Primero{
+  margin-top: 60%;
+}
+h3.tituloCategoria{
+  margin-left: 10%;
+  color: var(--blanco);
+}
+hr{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-color: var(--acento);
+}
+
+/* --------------carousel -------------------------------------*/
+
+.containerMax {
+  display: flex;
+  justify-content: center;
+}
+
+
+.containerCarrusel {
+  max-width: 80%;
+  margin: 2% 10% 3% 10%;
+  position: relative;
+}
+.containerCarrusel i {
+  top: 50%;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  position: absolute;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 35px;
+  background: #f7f7f7;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.containerCarrusel i:first-child {
+  left: -23px;
+  display: none;
+}
+.containerCarrusel i:last-child {
+  right: -23px;
+}
+.containerCarrusel .carousel {
+  font-size: 0;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging {
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img {
+  pointer-events: none;
+}
+.carousel .card {
+  display: inline;
+}
+.carousel div {
+  margin-left: 13px;
+  display: inline-block;
+  width: 150px;
+  height: 140px;
+  background: #318185;
+  border-radius: 10px;
+  position: relative;
+}
+
+
+.carousel div p {
+  font-size: 18px;
+  color: var(--blanco);
+  margin: 18px 10px;
+}
+.carousel div img.star {
+  position: absolute;
+  bottom: 23%;
+  left: 3%;
+  width: 55px;
+  height: 20px;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+}
+.carousel div img.carritoMas {
+  position: absolute;
+  bottom: 5%;
+  right: 3%;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+}
+.carousel div p.precio {
+  position: absolute;
+  bottom: 7%;
+  right: 3%;
+  color: var(--acento);
+  font-size: 10px;
+}
+.carousel div p.precioT {
+  position: absolute;
+  bottom: 15%;
+  right: 2%;
+  color: var(--blanco);
+  text-decoration: line-through;
+  font-size: 8px;
+}
+
+button.miBoton, img.imagenBoton {
+  width: 30px;
+  height: 30px;
+}
+
+button.miBotonCard img.carritoMas.imagenBotonCard.sombra {
+  width: 20px;
+  height: 20px;
+}
+.jugar {
+  position: absolute;
+  border-radius: 18px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 70px;
+  height: 30px;
+  background: var(--estado);
+  opacity: 90%;
+  color: var(--negro);
+  transition: transform 2s, font-size 2s;
+}
+.jugar:active{
+  background: linear-gradient(180deg, var(--acento2), var(--acento));
+}
+.jugarOk {
+  cursor: pointer;
+  font-weight: 650;
+}
+.jugarOff {
+  opacity: 75%;
+  pointer-events: none;
+  cursor: not-allowed !important;
+}
+.jugar-click:hover {
+  transform: rotate3D(2, 2, 2, 360deg);
+  background: #ff0000;
+  font-size: xx-large;
+}
+
+.carousel div img {
+  height: 90px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.carousel img:first-child {
+  margin-left: 0;
+}
+.carousel div p{
+  font-size: 13px;
+}
+/*--------------------Mas jugados Index----------------*/
+.indexMasjugados{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+  max-width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+}
+
+.mario img, .textoMario{
+object-fit: cover;
+}
+
+.textoMario{
+margin-bottom: 30px;
+background-color: var(--acento);
+color: var(--blanco);
+padding: 5px;
+border-radius: 0px 0px 10px 10px;
+}
+
+.masJugadosCards{
+display: block;
+}
+
+.mario img{
+width: 312px;
+border-radius: 10px 10px 0px 0px;
+} 
+/*----card mas jugados-------*/
+.masJugados {
+  width: 320px;
+  height: 50px;
+  display: flex;
+  padding: 0%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.masJugadosImagen,
+.masJugadosImagen img {
+  width: 70px;
+  height: 50px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.masJugadosContenido {
+  width: 100%;
+  background-color: var(--secundario);
+  display: flex;
+  border-radius: 0px 10px 10px 0px;
+}
+.titulo {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  font-size: 14px;
+  color: var(--blanco);
+  font-weight: bolder;
+  width: 100%;
+}
+
+.precio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.precio span img{
+    width: 25px;
+}
+.masJugados span.acento {
+  margin: 10px;
+  font-weight: bolder;
+}
+
+.parCards {
+  display: flex;
+  justify-content: space-around;
+}
+h3 span{
+  color: var(--acento);
+  font-size: 14px;
+}
+/*---------------------------------------Media Queria Desktop-------------------------------------------------*/
+
+@media only screen and (min-width: 900px) {
+  .container {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  
+
+  /*-----------------------------Fuentes-----------------------------*/
+
+  h1 {
+    color: #262626;
+    font-size: 58px;
+    font-weight: 600;
+    word-wrap: break-word;
+  }
+  h2 {
+    font-size: 42px;
+    font-family: Open Sans;
+    font-weight: 700;
+    letter-spacing: 3.24px;
+    word-wrap: break-word;
+  }
+
+  h3 {
+    color: var(--blanco);
+    font-size: 30px;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  .precio span img{
+    width: 50px;
+}
+
+h3 span{
+  color: var(--acento);
+  font-size: 24px;
+}
+  p.textoBody {
+    color: var(--blanco);
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    word-wrap: break-word;
+  }
+
+  p.textoBodyChico {
+    color: var(--blanco);
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  a{
+    text-decoration: none;
+    color: var(--blanco);
+  }
+
+  .peligro {
+    color: var(--peligro);
+    font-size: 13px;
+  }
+  .estado {
+    color: var(--estado);
+    font-weight: bold;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /*---------------------------Paginas Form--------------------------------*/
+
+  .form .logo {
+    width: 106px;
+    height: 106px;
+  }
+  body.form {
+    background-color: var(--primarioSombra1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .containerFondo {
+    width: 30%;
+    display: block;
+    flex-wrap: wrap;
+    background-color: var(--blanco);
+    border-radius: 6px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  input,
+  button {
+    margin: 6px;
+  }
+
+  button img {
+    margin-left: 6px;
+  }
+
+  ::placeholder {
+    padding-left: 6px;
+  }
+
+  body.form {
+    margin-top: 40px;
+    margin: 20 px;
+    align-items: center;
+  }
+
+  img.captcha {
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  button.ingresar,
+  button.continuar {
+    width: 300px;
+    height: 40px;
+    border-radius: 4px;
+    align-items: center;
+  }
+  button .alinearHorizontal {
+    display: flex;
+    align-items: center;
+  }
+  .alinearVertical {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
+
+  span.continuarCon {
+    margin-left: 10px;
+  }
+  button.continuar {
+    background-color: var(--estado);
+    color: var(--blanco);
+    font-size: 18px;
+  }
+
+  button.ingresar {
+    text-align: left;
+    align-items: center;
+  }
+  img.separador {
+    width: 300px;
+    height: 3px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .inputForm {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .inputForm label{
+    text-align: left;
+    margin-left: 6px;
+  }
+  .formulario{
+    margin-top: 20px;
+  }
+  input.input {
+    width: 300px;
+    height: 40px;
+    border-radius: 6px;
+    border: 0%;
+  }
+
+  /*---------------------------Pagina Juegos----------------------------------*/
+
+  /*------Layouts Juegos----------*/
+
+  div.containerJuegos h2 {
+    text-align: center;
+    color: var(--blanco);
+  }
+  .containerJuegos {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: var(--primarioSombra1);
+  }
+
+  .containerJuegos,
+  aside.asideVideos,
+  aside .asideJuego {
+    display: block;
+  }
+
+  .breadcrumb,
+  section.sectionJuego,
+  section .sectionComentarios {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  section.sectionJuego {
+    height: 900px;
+    margin-top: 20px;
+  }
+
+  aside.asideJuegoInstrucciones {
+    width: 1000px;
+    height: 1040 px;
+    margin: 0%;
+  }
+
+  section.sectionRecomendados {
+    margin-top: 6px;
+    margin-bottom: 50px;
+  }
+
+  aside.asideVideos {
+    width: max-content;
+    margin-left: 160px;
+  }
+
+  .video {
+    position: relative;
+  }
+  
+  .btn-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer
+  }
+ 
+  .btn-play img.play {
+    width: 50px;
+    height: 50px;
+    margin: 0%;
+
+  }
+
+  section.seccionRecomendados {
+    width: 100%;
+    height: 400px;
+  }
+
+  section.sectionComentarios {
+    width: 100%;
+    height: 800px;
+    background-color: var(--primarioSombra3);
+    margin-bottom: 50px;
+    border-radius: 10px;
+  }
+
+  aside.asideVideos.video img {
+    width: 316px;
+    height: 227px;
+    margin: 6px;
+  }
+
+  .video img {
+    width: 250px;
+    height: 200px;
+    border-radius: 6px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+  }
+
+  .juegoSidebar img {
+    width: 800px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 16px 16px 0px 0px;
+  }
+  .juegoSidebar{
+    margin: 0;
+    padding: 0;
+  }
+  img.separadorVideosSugeridos {
+    width: 250px;
+    margin-bottom: 20px;
+  }
+
+  aside.siderbarJuegoInstrucciones div.instrucciones {
+    /*revisar no me lo toma*/
+    background-color: var(--primarioSombra3);
+    width: 780px;
+    height: max-content;
+    margin-top: 50px;
+    padding: 10px;
+    font: "Open-Sans";
+    font-size: 18px;
+    color: var(--blanco);
+    border-radius: 6px;
+  }
+
+  /*------Comentarios-----------*/
+  div.botoneraComentarios {
+    width: 80%;
+    height: 50px;
+    padding: 20px;
+    display: flex;
+    margin-bottom: 0%;
+  }
+
+  div.botoneraComentarios img {
+    width: 20px;
+    height: 20px;
+    background-color: var(--primario);
+  }
+
+  input.botoneraComentarios {
+    width: 90%;
+    height: 40px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 20px;
+    margin-bottom: 40px;
+  }
+
+  button.btn-coment {
+    background-color: var(--primario);
+    padding: 6px;
+    border-radius: 4px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .sombra{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+
+  
+  .usuarioComent {
+    display: flex;
+    justify-content: flex-start;
+    color: var(--blanco);
+    align-items: center;
+  }
+  span.usuarioComent.chico {
+    font-size: 12px;
+  }
+  span.usuarioComent {
+    margin-left: 20px;
+  }
+
+  .usuarioComent.usuarioComentMarg {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+  }
+  button.enviar {
+    background-color: var(--blanco);
+    width: min-content;
+    height: 40px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font: "Open Sans";
+    font-size: 16px;
+    border-radius: 4px;
+    font-weight: bolder;
+    margin-bottom: 40px;
+  }
+  /*------Botonera Redes----------*/
+  div.botoneraRedes {
+    background-color: var(--secundarioLuz1);
+    width: 790px;
+    /* height: 50px; */
+    margin: 0%;
+    border-radius: 0px 0px 6px 6px;
+    padding-right: 10px;
+  }
+  .div.botoneraRedes img {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+  }
+
+  .siderbarJuegoInstrucciones .botoneraRedes {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  button.redesJuego {
+    background-color: transparent;
+    border: transparent;
+  }
+  .redesJuego img {
+    width: 20px;
+    height: 20px;
+    border-radius: 0%;
+    margin: 0%;
+  }
+
+  img.redes {
+    width: 20x;
+    height: 20px;
+  }
+
+  /*-----------------nav----------------*/
+  .navMobil {
+    display: none;
+  }
+  .stick {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .navDesktop {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav {
+    width: 100%;
+    height: 80px;
+    background: #262626;
+    opacity: 90%;
+  }
+  .btn-nav {
+    width: max-content;
+    height: max-content;
+    margin-left: 6px;
+    background-color: transparent;
+    color: var(--blanco);
+    border: transparent;
+    align-items: center;
+    font-size: 16px;
+  }
+  .justifyFlexStart,
+  .alignCenter,
+  .justifyFlexEnd {
+    display: flex;
+  }
+  .justifyFlexStart {
+    justify-content: flex-start;
+  }
+  .justifyFlexEnd {
+    justify-content: flex-end;
+  }
+  .alignCenter {
+    align-items: center;
+  }
+  .marginNavLeft {
+    margin-left: 10%;
+  }
+  .marginNavRight {
+    margin-right: 10%;
+  }
+  .logoHamburguesa {
+    height: 25px;
+    width: 25px;
+    align-items: center;
+    margin-right: 30px;
+  }
+  .logoNav {
+    height: 40px;
+    width: 40px;
+    align-items: center;
+  }
+
+  .flechaAbajo {
+    width: 12px;
+    height: 6px;
+  }
+  .lupaNav {
+    color: var(--primario);
+    width: 12px;
+    height: 12px;
+    padding: 2px;
+  }
+  .barraBusqueda {
+    background-color: var(--blanco);
+    align-items: center;
+    height: 22px;
+    width: max-content;
+    padding: 2px;
+    border: 2px solid var(--primarioSombra3);
+    border-radius: 6px;
+    background-color: var(--blanco);
+  }
+  input.busquedaNav,
+  .lupaNav {
+    margin: 0px;
+    align-items: center;
+    height: min-content;
+  }
+  input.busquedaNav {
+    border: transparent;
+    background-color: var(--blanco);
+  }
+  .logoCarritoMas1 {
+    width: 25px;
+    height: 25px;
+    align-items: center;
+  }
+  .siri img.avatar {
+    width: 30px;
+    height: 30px;
+    margin-top: 6px;
+  }
+
+  /*---Desplegable---*/
+  .desplegable.show {
+    display: flex;
+  }
+  .desplegable {
+    width: min-content;
+    height: min-content;
+    background-color: var(--primarioSombra2);
+    display: none;
+    position: absolute;
+    min-width: 0px;
+    padding: 10px;
+  }
+  .siri {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+  }
+
+  .item img.item {
+    width: 30px;
+    height: 30px;
+  }
+
+  img.separadorDesplegable {
+    width: min-content;
+  }
+
+  button.continuarDesplegable {
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    color: var(--blanco);
+    width: min-content;
+    height: min-content;
+    background-color: var(--estado);
+  }
+  /*------Footer----------*/
+  footer .footerMobil{
+    display: none;
+  }
+  footer .desktop {
+    display: flex;
+  }
+  .footer {
+    background: var(--primarioSombra2);
+    color: var(--blanco);
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .footerContainerMaster {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footerContainerMaster div:first-child {
+    margin-left: 10%;
+  }
+  .footerContainerMaster div:last-child {
+    margin-right: 10%;
+  }
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerContainer span {
+    padding: 5px;
+  }
+
+  .redesFooter {
+    display: flex;
+  }
+  .blanco {
+    color: var(--blanco);
+  }
+  .acento2 {
+    color: var(--acento2);
+  }
+  .acento {
+    color: var(--acento);
+  }
+
+  .primario {
+    color: var(--primario);
+  }
+  .secundario {
+    color: var(--secundario);
+  }
+  footer img.logoPagina {
+    width: 70px;
+    height: 70px;
+  }
+
+  .footerLegales,
+  .footerMoneda,
+  .footerLenguaje,
+  .footerInformacion,
+  .footerContactanos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+  }
+  .footerContainerBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 10%;
+  }
+
+  /*----card mas jugados-------*/
+  .masJugados {
+    width: 600px;
+    height: 100px;
+    display: flex;
+    padding: 0%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  .masJugadosImagen,
+  .masJugadosImagen img {
+    width: 150px;
+    height: 100px;
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .masJugadosContenido {
+    width: 100%;
+    background-color: var(--secundario);
+    display: flex;
+    border-radius: 0px 10px 10px 0px;
+  }
+  .titulo {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    font-size: 18px;
+    color: var(--blanco);
+    font-weight: bolder;
+    width: 100%;
+  }
+
+  .precio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .masJugados span.acento {
+    margin: 10px;
+    font-weight: bolder;
+  }
+
+  .parCards {
+    display: flex;
+    justify-content: space-around;
+  }
+  /*--------------------Mas jugados Index----------------*/
+  .indexMasjugados{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  
+  }
+ 
+.mario img, .textoMario{
+  object-fit: cover;
+  margin-left: 10%;
+}
+
+.textoMario{
+  margin-bottom: 30px;
+  background-color: var(--acento);
+  color: var(--blanco);
+  padding: 5px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.masJugadosCards{
+display: block;
+}
+
+.mario img{
+  height: 350px;
+  width: 90%;
+  border-radius: 10px 10px 0px 0px;
+} 
+
+  /*--------------------Efectos-------------------------*/
+  .continuar:hover,
+  .estado:hover,
+  .btn-nav:hover,
+  .hoverAcento:hover, 
+  .ingresar:hover,
+  .enviar:hover  {
+    cursor: pointer;
+  }
+  .continuar:hover {
+    background-color: var(--estadoHover);
+  }
+  .estado:hover {
+    color: var(--estadoHover);
+  }
+  .btn-nav:hover,
+  .hoverAcento:hover {
+    color: var(--acento);
+  }
+
+  .ingresar:hover,
+  .enviar:hover {
+    background-color: var(--blancoHover);
+  }
+
+  .subir {
+    color: var(--estado);
+    text-decoration: none;
+    display: block;
+    float: right;
+  }
+  .animar:hover{
+    position: relative;
+    transform: scale(1.01);
+    background-color: var(--acento2);
+    border: solid var(--acento) 4px;
+    border-radius: 12px;
+  }
+    
+  /*---------Registro Ok-------*/
+  .popup {
+    display: none;
+  }
+
+  .visible {
+    display: flex;
+    width: max-content;
+    height: max-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 50px;
+  }
+  .ocultar {
+    display: none;
+  }
+
+  .porcentajesCarga img {
+    width: 100px;
+    height: 100x;
+    align-items: center;
+    justify-content: center;
+  }
+  /*----------Agrandar---------*/
+  .agrandar {
+    background-color: var(--blanco);
+    text-align: center;
+    transition: background-color 0.5s ease-in-out;
+  }
+
+  .agrandar:hover {
+    background-color: var(--estado);
+  }
+  /*---------Scroll Ok-------*/
+  .scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--estado);
+    color: var(--blanco);
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+  }
+  .scroll-top.scrolling {
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  .scroll-top:hover {
+    opacity: 1;
+  }
+
+/* --------------carousel -------------------------------------*/
+
+.containerMax {
+  display: flex;
+  justify-content: center;
+}
+
+
+.containerCarrusel {
+  max-width: 80%;
+  margin: 2% 10% 3% 10%;
+  position: relative;
+}
+.containerCarrusel i {
+  top: 50%;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  position: absolute;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 35px;
+  background: #f7f7f7;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.containerCarrusel i:first-child {
+  left: -23px;
+  display: none;
+}
+.containerCarrusel i:last-child {
+  right: -23px;
+}
+.containerCarrusel .carousel {
+  font-size: 0;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging {
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img {
+  pointer-events: none;
+}
+.carousel .card {
+  display: inline;
+}
+.carousel div {
+  margin-left: 13px;
+  display: inline-block;
+  width: 230px;
+  height: 180px;
+  background: #318185;
+  border-radius: 10px;
+  position: relative;
+}
+.carousel div p {
+  font-size: 18px;
+  color: var(--blanco);
+  margin: 18px 10px;
+}
+.carousel div img.star {
+  position: absolute;
+  bottom: 23%;
+  left: 3%;
+  width: 55px;
+  height: 20px;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+}
+.carousel div img.carritoMas {
+  position: absolute;
+  bottom: 5%;
+  right: 3%;
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+}
+.carousel div p.precio {
+  position: absolute;
+  bottom: -5%;
+  right: 18%;
+  color: var(--acento);
+}
+.carousel div p.precioT {
+  position: absolute;
+  bottom: 4%;
+  right: 16%;
+  color: var(--blanco);
+  text-decoration: line-through;
+  font-size: 14px;
+}
+.jugar {
+  position: absolute;
+  border-radius: 18px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100px;
+  height: 40px;
+  background: var(--estado);
+  opacity: 90%;
+  color: var(--negro);
+  transition: transform 2s, background-color 2s, font-size 2s;
+}
+
+.jugarOk {
+  cursor: pointer;
+  font-weight: 650;
+}
+.jugarOff {
+  opacity: 75%;
+  pointer-events: none;
+  cursor: not-allowed !important;
+}
+.jugar-click:hover {
+  transform: rotate3D(2, 2, 2, 360deg);
+  background: #ff0000;
+  font-size: xx-large;
+}
+
+.carousel div img {
+  height: 115px;
+  width: 230px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.carousel img:first-child {
+  margin-left: 0;
+}
+
+/* slider grande
+--------------- o ----------- */
+.containerGrande {
+  display: flex;
+  flex-flow: column wrap;
+}
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none inside;
+}
+
+ul.slider {
+  display: flex;
+  justify-content: center;
+}
+ul.slider img {
+  opacity: 0;
+  transition: opacity 1s;
+  position: absolute;
+  top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+ul.slider img:first-child {
+  opacity: 1;
+}
+ul.slider img:target {
+  opacity: 1;
+}
+.sliderNav {
+  display: flex;
+  justify-content: center;
+}
+.menu {
+  position: relative;
+  top: 650px;
+}
+.menu li {
+  display: inline;
+}
+.menu a {
+  text-decoration: none;
+  padding: 5px;
+  cursor: default;
+}
+a:hover .circle {
+  cursor: pointer;
+  fill: var(--secundarioLuz1);
+}
+
+/*Font carousel*/
+.h3Primero{
+  margin-top: 45%;
+}
+h3.tituloCategoria{
+  margin-left: 10%;
+}
+hr{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-color: var(--acento);
+}
+}
+
+/*Boton cambiar carrito*/
+.precio button.miboton, .imagenBoton{
+  background-color: var(--estado);
+  margin: 0;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+}
+.miBoton{
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px var(--negro);
+  background-color: var(--estado);
+}
+
+.carousel div img.carritoMas.imagenBotonCard{
+  position: absolute;
+  bottom: 5%;
+  right: 3%;
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+  margin: 0;
+}
+.miBotonCard{
+  position: absolute;
+  bottom: 5%;
+  right: 3%;
+  width: 30px;
+  height: 30px;
+  background-color: var(--esta);
+  margin: 0;
+  border: transparent;
+  border-radius: 4px;
+}
+/*------------------Variables que uso en js-------------*/
+--var--rows: 6;
+--var--cols: 7;
+}
+   /*-----------------------------Fuentes-----------------------------*/
+
+   .fondo h1 {
+   color: var(--blanco);
+   font-size: 58px;
+   font-weight: 600;
+   word-wrap: break-word;
+ }
+  .fondo h2 {
+   font-size: 42px;
+   font-family: Open Sans;
+   font-weight: 700;
+   letter-spacing: 3.24px;
+   word-wrap: break-word;
+ }
+
+ .fondo h3 {
+   color: var(--blanco);
+   font-size: 30px;
+   font-weight: 400;
+   word-wrap: break-word;
+ }
+
+ .fondo p{
+   font-size: 12px;
+   font-family: Open Sans;
+   margin-top: 15px;
+   color: var(--acento2);
+   text-transform: uppercase;
+ }
+
+  
+
+
+/*----------------------Preferencias---------------------------*/
+.fondo{
+  padding-top: 50px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.fondo .preferencias{
+   margin-left: 70px;
+   max-width: 600px;
+   max-height: 400px;
+   padding: 3rem;
+   background: var(--negro);
+   padding: 2rem;
+   border-radius: 1rem;
+   box-shadow: 0 0 15rem var(--negro);
+   color: var(--blanco);
+  
+ }
+ .fondo .preferencias h1{
+   color: var(--blanco);
+   margin: auto;
+   font-size: Open-Sans;
+   font-size: 32px;
+   text-align: center;
+   margin-bottom: 2rem;
+ }
+
+ .fondo .formPreferencias{
+   display: flex;
+ }
+ 
+ .fondo .inputPreferencias{
+   margin: auto;
+   width: 100%;
+ }
+
+ .fondo .comboBox{
+   margin: 10px 0;
+   background: transparent;
+   border: 0px;
+   border-bottom: 2px solid var(--acento2);
+   padding: 10px;
+   color: var(--blanco);
+   width: 100%;
+ }
+
+ .fondo option{
+   background-color: var(--acento2);
+ }
+
+/*---------------------Juego-------------------------------------*/
+.fondo #juego{
+ display:flex;
+}
+
+
+.fondo{
+ width: 800px;
+ height: 600px;
+ background-image: url('./img/mesa.jpg');
+ background-size: cover; /* Otra opción podría ser 'contain' para ajustar la imagen al tamaño del contenedor */
+ background-repeat: no-repeat;
+ background-attachment: fixed; /* Esto mantiene la imagen fija en su posición al desplazar la página */
+ background-color: var(--primarioSombra1); /* Un color de fondo de respaldo si la imagen no se carga o se muestra parcialmente */
+}
+
+.fondo .popupJuego {
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background: var(--primario);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   visibility: hidden;
+}
+.fondo .ganador {
+   background: var(--primario);
+   width: 400px;
+   height: 300px;
+   border-radius: 3px;
+   box-shadow: 0px 0px 5px 8px var(--blancoHover);
+   background-image: url('./img/fondoPopUp.gif');
+   background-color: var(--estadoHover);
+   padding: 4px;
+}
+p.textoGanador{
+   text-align: center;
+   justify-content: center;
+}
+.fondo .popupGanador {
+   display: block;
+   align-items: center;
+   justify-content: center;
+}
+.fondo .popupGanador p {
+   font-weight: bold;
+   font-size: 40px;
+}
+button.close{
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+.fondo .ganador .jugar {
+   margin-top: 90px;
+   margin-left: 160px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+.fondo .active {
+  z-index: 1000;
+  visibility: visible;
+}
+
+
+.fondo image{
+ width: 50px;
+ height: 50px;
+}
+
+.fondo button.reset{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 120px;
+  height: 40px;
+  background: var(--acento);
+  opacity: 90%;
+  color: var(--negro);
+  font-weight: bolder;
+}
+.fondo button.reset:active{
+  background: linear-gradient(180deg, var(--acento2), var(--acento));
+}
+
+.botoneraRedes button.jugar{
+  display: flex;
+  align-items: center;
+  margin-left: 400px;
+  position: relative;
+  height: 20px;
+  width: max-content;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bolder;
+  color: var(--blanco);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.fondo button.jugar{
+display: flex;
+align-items: center;
+position: relative;
+height: 40px;
+width: max-content;
+padding: 10px;
+border-radius: 8px;
+font-weight: bolder;
+color: var(--blanco);
+border: solid 1px var(--blanco);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+

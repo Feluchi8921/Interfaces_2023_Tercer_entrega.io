@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>4 en Línea</title>
+  </head>
+  <body>
+    <header class="stick">
+      <nav>
+        <div class="navDesktop">
+          <div class="justifyFlexStart alignCenter marginNavLeft">
+            <!---Desplegable categorias ok-->
+            <div class="btn-menu btn-nav dropdown">
+              <img
+                src="img/logoHamburguesa.svg"
+                class="logoHamburguesa"
+                alt="logoHamburguesa"
+              />
+
+              <div class="desplegable desplegableHamburguesa">
+                <div class="item">
+                  <img class="item" src="img/misJuegos.svg" alt="logo" />
+                  <button class="btn-nav">
+                    <a>Mis juegos</a
+                    >
+                  </button>
+                </div>
+                <div class="item">
+                  <img class="item" src="img/accion.svg" alt="logo" />
+                  <button class="btn-nav">
+                    <a>Acción</a
+                    >
+                  </button>
+                </div>
+                <div class="item">
+                  <img class="item" src="img/aventura.svg" alt="logo" />
+                  <button class="btn-nav">
+                    <a>Aventura</a
+                    >
+                  </button>
+                </div>
+                <div class="item">
+                  <img class="item" src="img/carreras.svg" alt="logo" />
+                  <button class="btn-nav">
+                    <a>Carreras</a
+                    >
+                  </button>
+                </div>
+                <div class="item">
+                  <img class="item" src="img/multijugador.svg" alt="logo" />
+                  <button class="btn-nav">
+                    <a>Multijugador</a
+                    >
+                  </button>
+                </div>
+                <div class="item">
+                  <img class="item" src="img/deporte.svg" alt="logo" />
+                  <button class="btn-nav">
+                    <a>Deporte</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!---->
+            <a href="home.html">
+            <img src="img/logoPagina.svg" class="logoNav" alt="logoPagina" /></a>
+            <button class="btn-nav">
+              <a>Categorías</a
+              >
+            </button>
+            <button class="btn-nav">
+              <a>Comunidad</a
+              >
+            </button>
+            <button class="btn-nav">
+              <a>Soporte</a>
+            </button>
+
+            <div class="barraBusqueda">
+              <input class="busquedaNav" /><img
+                src="img/lupaNav.svg"
+                class="lupaNav"
+              />
+            </div>
+          </div>
+          <div class="justifyFlexEnd alignCenter marginNavRight">
+            <div class="justifyCenter alignCenter">
+              <!---Desplegable Siri-->
+              <div class="btn-menu btn-nav dropdown">
+                <div class="siri">
+                  <img src="img/siri98.svg" class="avatar" /><button
+                    class="btn-nav"
+                  >
+                    <a>Siri98</a
+                    ><img src="img/flechaAbajo.svg" class="flechaAbajo" />
+                  </button>
+                </div>
+
+                <div class="desplegable desplegableUsuario">
+                  <buttton class="btn-nav">Ver mi perfil</buttton>
+                  <img
+                    class="separadorDesplegable"
+                    src="img/separador.svg"
+                    alt="separador"
+                  />
+                  <buttton class="btn-nav">Cupones</buttton>
+                  <buttton class="btn-nav">Mis juegos</buttton>
+                  <img
+                    src="img/separador.svg"
+                    class="separadorDesplegable"
+                    alt="separador"
+                  />
+                  <buttton class="btn-nav">Configurar cuenta</buttton>
+                  <buttton class="btn-nav">Editar perfil</buttton>
+                  <img
+                    src="img/separador.svg"
+                    class="separadorDesplegable"
+                    alt="separador"
+                  />
+                  <buttton class="btn-nav"><a href="index.html"> Cerrar sesión</a></buttton>
+                </div>
+              </div>
+              <!---->
+            </div>
+            <!---Desplegable Carrito-->
+            <div class="btn-menu btn-nav dropdown">
+              <button class="btn-nav">
+                <img src="img/logoCarritoMas1.svg" class="logoCarritoMas1" />
+              </button>
+              <div class="desplegable desplegableCarrito">
+                <span class="btn-nav">Resumen de compra</span>
+                <img
+                  class="separadorDesplegable"
+                  src="img/separador.svg"
+                  class="separador"
+                  alt="separador"
+                />
+                <span class="btn-nav">Juegos (1)</span>
+                <div class="productoPrecio">
+                  <span class="btn-nav">Slash Royal</span
+                  ><span class="btn-nav">$2090</span>
+                </div>
+                <img class="producto btn-nav" src="img/slashRoyal.jpg" />
+                <span class="btn-nav">Total $2090</span>
+                <button class="continuarDesplegable">Pagar</button>
+              </div>
+            </div>
+          </div>
+
+          <!----->
+        </div>
+      </nav>
+    </header>
+
+    <div class="containerJuegos">
+      <div class="breadcrumb">
+        <button class="btn-nav"><a href="index.html">
+    <a href="home.html">
+          Home<img src="img/flechaAbajo.svg" class="flechaAbajo rotar" /></a></button
+        ><button class="btn-nav"><a href="juego.html">
+          4 en Línea<img src="img/flechaAbajo.svg" class="flechaAbajo rotar" /></a>
+        </button>
+      </div>
+      <h2>4 en Línea: Mario vs Luigi</h2>
+      <section class="sectionJuego">
+        <aside class="siderbarJuegoInstrucciones">
+          <div class="juegoSidebar">
+            <div class="fondo">
+              <div class="preferencias" id="preferencias">
+                  <h1>Ingresa las preferencias de juego</h1>
+                  <form id="formPreferencias" class="formPreferencias">
+                    <div class="inputPreferencias">
+                      <div class="izquierda">
+                        <p>Jugador 1</p>
+                        <select name="j1" id="j1" class="comboBox">
+                          <option value="mario">Mario</option>
+                          <option value="mickey">Mickey</option>
+                          <option value="coyote">Coyote</option>
+                        </select>
+                        <p>Jugador 2</p>
+                        <select name="j2" id="j2" class="comboBox">
+                          <option value="luigi">Luigi</option>
+                          <option value="homero">Homero</option>
+                          <option value="correcaminos">Correcaminos</option>
+                        </select>
+                      </div>
+                      <div>
+                          <p>Variantes del juego</p>
+                          <select name="n_juego" id="n_juego" class="comboBox">
+                            <option value="4">4 en Linea</option>
+                            <option value="5">5 en Linea</option>
+                            <option value="6">6 en Linea</option>
+                            <option value="7">7 en Linea</option>
+                          </select>
+                        </div>
+                        <button id="iniciar" type="submit" class="jugar" name="iniciar">
+                          Jugar
+                        </button>
+                      </div>
+                  </form>
+                </div>
+              <div id="juego">
+                  <canvas id="myCanvas"></canvas>
+              <div class="popupJuego">
+                  <div class="ganador">
+                      <button class="close">x</button>
+                      <div class="popupGanador">
+                          <p class="textoGanador">¡Ganó Jugador1!</p>
+                          <button class="reset">Juega de nuevo</button>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+            <div class="botoneraRedes">
+              <div class="horizontal">
+              <button class="redesJuego">
+                <a href="#"><img src="img/email.svg" /></a>
+              </button>
+              <button class="redesJuego horizontal">
+                <a href="#"><img src="img/whatsapp.svg" /></a>
+              </button>
+              <button class="redesJuego">
+                <a href="#"><img src="img/twitter.svg" /></a>
+              </button>
+              <button class="redesJuego">
+                <a href="#"><img src="img/instagram.svg" /></a>
+              </button>
+              <button class="redesJuego">
+                <a href="#"><img src="img/twitch.svg" /></a>
+              </button>
+              <button class="redesJuego">
+                <a href="#"><img src="img/facebook.svg" /></a>
+              </button>
+            </div>
+            </div>
+          </div>
+          <div class="instrucciones">
+            <div>Cómo se juega:</div>
+            <div>
+              Selecciona los jugadores de la partida Cuando sea tu turno arrástrala la primera 
+              ficha de arriba hasta la zona coloreada, apuntando a la columna que
+              la desees tirar y suéltala. Gana quien primero consiga 4 en línea (hoizontal, vertical o diagonal). Para mas información visita nuestra página:
+            </div>
+            <div class="secundario">www.levelup.com/masayuda.html</div>
+          </div>
+        </aside>
+        <aside class="asideVideos">
+          <h3>Videos sugeridos</h3>
+          <img
+            class="separadorVideosSugeridos"
+            src="img/separador.svg"
+            alt="separador"
+          />
+          <div class="video">
+            <p class="textoBody">Trucos y atajos</p>
+            <button class="btn-play"><img class="play" src="img/play.svg" /></button>
+            <img src="img/video2.jpg" alt="video" />
+          </div>
+          <div class="video">
+            <p class="textoBody">Jugada maestra</p>
+            <button class="btn-play"><img class="play" src="img/play.svg" /></button>
+            <img src="img/video3.jpg" alt="video" />
+          </div>
+          <div class="video">
+            <p class="textoBody">LLevate la copa</p>
+            <button class="btn-play"><img class="play" src="img/play.svg" /></button>
+            <img src="img/video4.jpg" alt="video" />
+          </div>
+        </aside>
+      </section>
+      <section class="sectionRecomendados">
+        <h3>Recomendados de la semana</h3>
+        <div class="parCards">
+          <div class="masJugados sombra">
+            <div class="masJugadosImagen">
+              <img src="img/gridPunk.jpg" alt="juego" />
+            </div>
+            <div class="masJugadosContenido">
+              <div class="titulo">
+                <span>Grid Punk</span>
+                <span><img src="img/estrella1solida4vacias.svg" /></span>
+              </div>
+              <div class="precio">
+                <h3><span class="acento">$850</span></h3>
+                <button class="miBoton"><img class="imagenBoton sombra" src="img/carritoMas.svg" alt="carritoComprar"
+                  /></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="masJugados sombra">
+            <div class="masJugadosImagen">
+              <img src="img/zombsRoyale.png" alt="juego" />
+            </div>
+            <div class="masJugadosContenido">
+              <div class="titulo">
+                <span>Zombs Royale</span>
+                <span><img src="img/estrella1solida4vacias.svg" /></span>
+              </div>
+              <div class="precio">
+                <h3><span class="acento">$930</span></h3>
+                <button class="miBoton"><img class="imagenBoton sombra" src="img/carritoMas.svg" alt="carritoComprar"
+                  /></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="parCards">
+          <div class="masJugados sombra">
+            <div class="masJugadosImagen">
+              <img src="img/spookyIsland.jpg" alt="juego" />
+            </div>
+            <div class="masJugadosContenido">
+              <div class="titulo">
+                <span>Spooky Island</span>
+                <span><img src="img/estrella1solida4vacias.svg" /></span>
+              </div>
+              <div class="precio">
+                <h3><span class="acento">$350</span></h3>
+                <button class="miBoton"><img class="imagenBoton sombra" src="img/carritoMas.svg" alt="carritoComprar"
+                  /></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="masJugados sombra">
+            <div class="masJugadosImagen">
+              <img src="img/smashKarts.jpg" alt="juego" />
+            </div>
+            <div class="masJugadosContenido">
+              <div class="titulo">
+                <span>Grid Punk</span>
+                <span><img src="img/estrella1solida4vacias.svg" /></span>
+              </div>
+              <div class="precio">
+                <h3><span class="acento">$850</span></h3>
+                <button class="miBoton"><img class="imagenBoton sombra" src="img/carritoMas.svg" alt="carritoComprar"
+                  /></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <h3>Calificaciones y Opiniones</h3>
+      <section class="sectionComentarios">
+        <div class="botoneraComentarios textoBodyChico">
+          <button class="btn-nav btn-coment">Todas</button>
+          <button class="btn-nav btn-coment">Positivas</button>
+          <button class="btn-nav btn-coment">Negativas</button>
+          <button class="btn-nav btn-coment">
+            5 <img src="img/estrellaSolida.svg" />
+          </button>
+          <button class="btn-nav btn-coment">
+            4 <img src="img/estrellaSolida.svg" />
+          </button>
+          <button class="btn-nav btn-coment">
+            3 <img src="img/estrellaSolida.svg" />
+          </button>
+          <button class="btn-nav btn-coment">
+            2 <img src="img/estrellaSolida.svg" />
+          </button>
+          <button class="btn-nav btn-coment">
+            1 <img src="img/estrellaSolida.svg" />
+          </button>
+        </div>
+        <div class="alignCenter">
+          <input
+            class="botoneraComentarios"
+            type="text"
+            placeholder="Escribe tu experiencia personal (opcional)"
+          />
+          <button class="enviar agrandar">Enviar</button>
+        </div>
+        <div class="alinearVertical">
+          <div class="usuarioComent">
+            <div class="usuario">
+              <div class="btn-menu btn-nav dropdown">
+                <div class="siri">
+                  <img src="img/juanaDeArco.svg" class="avatar" /><button
+                    class="btn-nav"
+                  >
+                    <a>Juana De Arco</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="usuarioComent">
+            <img src="img/estrella2solidas3vacias.svg" />
+            <span class="usuarioComent chico">02/10/2023</span>
+          </div>
+          <div class="usuarioComent usuarioComentMarg">
+            Cumple con lo que ofrece. Interfaz sencilla de entender, con
+            diferentes modos de juego (contra la máquina y dos jugadores online)
+            y una estética agradable.
+          </div>
+        </div>
+
+        <div class="alinearVertical">
+          <div class="usuarioComent">
+            <div class="usuario">
+              <div class="btn-menu btn-nav dropdown">
+                <div class="siri">
+                  <img src="img/martaSanchez.svg" class="avatar" /><button
+                    class="btn-nav"
+                  >
+                    <a>María Sanchez</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="usuarioComent">
+            <img src="img/estrella5solidas.svg" />
+            <span class="usuarioComent chico">05/10/2023</span>
+          </div>
+          <div class="usuarioComent usuarioComentMarg">
+            Para mí el cuatro en línea cumple con lo que promete y también me
+            gusta porque tiene para poder aprender las combinaciones
+            dificultades y también podes jugar con personas asi que le doy 5
+            estrellas.
+          </div>
+        </div>
+
+        <div class="alinearVertical">
+          <div class="usuarioComent">
+            <div class="usuario">
+              <div class="btn-menu btn-nav dropdown">
+                <div class="siri">
+                  <img src="img/usuarioGoogle.svg" class="avatar" /><button
+                    class="btn-nav"
+                  >
+                    <a>Usuario de Google</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="usuarioComent">
+            <img src="img/estrellas4solidas1vacia.svg" />
+            <span class="usuarioComent chico">06/10/2023</span>
+          </div>
+          <div class="usuarioComent usuarioComentMarg">
+            Es adictivo. Juego aparentemente simple, pero si quieres ganar mejor
+            piensa y no muevas a lo loco. Un juego de mesa de la vida real y en
+            tecnológico te puede ayudar en las matemáticas. Es un juego
+            entretenido amigos se lo recomiendo. Gracias en verdad y bye
+          </div>
+        </div>
+
+        <div class="alinearVertical">
+          <div class="usuarioComent">
+            <div class="usuario">
+              <div class="btn-menu btn-nav dropdown">
+                <div class="siri">
+                  <img src="img/jonhyBravo.svg" class="avatar" /><button
+                    class="btn-nav"
+                  >
+                    <a>Jonhy Bravo</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="usuarioComent">
+            <img src="img/estrella5solidas.svg" />
+            <span class="usuarioComent chico">08/10/2023</span>
+          </div>
+          <div class="usuarioComent usuarioComentMarg">
+            La verdad es muy bueno el juego puedes jugar Online y puedes crear
+            tu propia partida configurando el modo de juego, también puedes
+            jugara partidas con amigos y hay top de todas las personas que
+            juegan a ese juego y muestra el primero segundo y tercero y mas
+            números para abajo, también te puedes editar un perfil puedes
+            cambiarte el nombre cuando quieras y la imagen igual, la verdad lo
+            recomiendo muchísimo
+          </div>
+        </div>
+      </section>
+    </div>
+    <button class="scroll-top" type="button">
+      <img class="flechaArriba" src="img/flechaAbajo.svg" />
+    </button>
+    <footer class="footer">
+      <div class="footerContainerMaster">
+        <div class="footerContainer footerLegales primario">
+          <a href="home.html">
+          <img class="logoPagina" src="img/logoPagina.svg" alt="logo" /></a>
+          <span class="hoverAcento">Level Up</span>
+          <span class="hoverAcento">Legales</span>
+          <span class="hoverAcento">Politica de privacidad</span>
+          <span class="hoverAcento">Imprimir</span>
+          <span class="hoverAcento">Agradecimientos</span>
+        </div>
+        <div class="footerContainer footerMoneda primario desktop">
+          <span class="blanco hoverAcento">Canjear Código</span>
+          <span class="hoverAcento">Monedas:</span>
+          <span class="acento2 hoverAcento">Patacone$</span>
+          <span class="hoverAcento">Dolar Solidario</span>
+          <span class="hoverAcento">Dolar Blue</span>
+          <span class="hoverAcento">Dolar Tarjeta</span>
+        </div>
+        <div class="footerContainer footerLenguaje primario desktop">
+          <span class="blanco hoverAcento">Lenguaje</span>
+          <span class="acento2 hoverAcento">Español</span>
+          <span class="hoverAcento">Alemán</span>
+          <span class="hoverAcento">Francés</span>
+          <span class="hoverAcento">Polaco</span>
+          <span class="hoverAcento">Inglés</span>
+        </div>
+        <div class="footerContainer footerInformacion primario">
+          <span class="blanco hoverAcento">Informacion</span>
+          <span class="hoverAcento">Blog</span>
+          <span class="hoverAcento">Dejanos tu consulta</span>
+          <span class="hoverAcento">Recursos</span>
+        </div>
+        <div class="footerContainer footerContactanos desktop">
+          <span class="blanco hoverAcento">Contactanos</span>
+          <div class="redesFooter">
+            <span class="hoverAcento"
+              ><a href="#"><img class="redes" src="img/whatsapp.svg" /></a
+            ></span>
+            <span class="hoverAcento"
+              ><a href="#"><img class="redes" src="img/twitter.svg" /></a
+            ></span>
+            <span class="hoverAcento"
+              ><a href="#"><img class="redes" src="img/instagram.svg" /></a
+            ></span>
+            <span class="hoverAcento"
+              ><a href="#"><img class="redes" src="img/twitch.svg" /></a
+            ></span>
+            <span class="hoverAcento">
+              <a href="#"><img class="redes" src="img/facebook.svg" /></a
+            ></span>
+          </div>
+        </div>
+      </div>
+      <div class="footerContainerBottom primario desktop">
+        <span class="hoverAcento"
+          >Av. Caseros 3039, Piso 2, CP 1264, Parque Patricios, CABA</span
+        >
+        <span class="hoverAcento">Copyright © 1999-2023 Level Up S.R.L</span>
+      </div>
+    </footer>
+
+    <!---Script-->
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/boton.js"></script>
+    <script src="js/Chip.js"></script>
+    <script src="js/Board.js"></script>
+    <script src="js/Game.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Bienvenido</title>
+  </head>
+  <body class="form">
+    <div class="containerFondo doc">
+    <a href="home.html">
+      <img class="logo" src="img/logoPagina.svg" alt="logo" /></a>
+      <h1>Bienvenido</h1>
+      <div class="containerForm">
+        <form>
+          <div class="inputForm">
+            <label for="email">Email</label>
+            <input
+              class="input"
+              type="email"
+              name="email"
+              minlength=""
+              required
+              placeholder="nombre_email@gmail.com"
+            />
+          </div>
+          <div class="inputForm">
+            <label for="password">Password</label>
+            <input
+              class="input"
+              type="password"
+              name="password"
+              minlength=""
+              placeholder="Ingrese su contraseña"
+              required
+            />
+          </div>
+        </form>
+        <p class="peligro">Tu contraseña debe tener al menos 8 caracteres</p>
+        <button id="boton" class="continuar">Continuar</button>
+        <div>
+          <span>¿No tenés cuenta? </span><span class="estado">Registrate</span>
+        </div>
+        <img src="img/separador.svg" class="separador" alt="separador" />
+        <div class="separador"></div>
+        <div class="button">
+          <button class="ingresar">
+            <div class="alinearHorizontal">
+              <img src="img/logoGoogle.svg" /><span class="continuarCon"
+                >Continuar con Google</span
+              >
+            </div>
+          </button>
+        </div>
+        <div>
+          <button class="ingresar">
+            <div class="alinearHorizontal">
+              <img src="img/logoFacebook.svg" /><span class="continuarCon"
+                >Continuar con Facebook</span
+              >
+            </div>
+          </button>
+        </div>
+        <div>
+          <button class="ingresar">
+            <div class="alinearHorizontal">
+              <img src="img/logoApple.svg" /><span class="continuarCon"
+                >Continuar con Apple</span
+              >
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup ocultar">
+      <h3>Te has registrado correctamente!!!</h3>
+      <p class="estado">Por favor, espera un momento. Te estamos redirigiendo al Home...</p>
+      <div class="load"></div>
+
+      <div class="porcentajesCarga">
+        <div class="porc1"><img src="img/25%.svg" /></div>
+        <div class="porc2"><img src="img/50%.svg" /></div>
+        <div class="porc3"><img src="img/60%.svg" /></div>
+        <div class="porc4"><img src="img/75%.svg" /></div>
+        <div class="porc5"><img src="img/100%.svg" /></div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/popup.js"></script>
+  </body>
+</html>

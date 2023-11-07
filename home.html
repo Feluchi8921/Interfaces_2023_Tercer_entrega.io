@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" type="text/css" href="stylecopy.css" /> -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Level Up</title>
+  </head>
+  <body>
+    <header class="stick">
+      <nav>
+        <!---Barra Nav Mobil-->
+        <div class="navMobil">
+          <div class="btn-menu btn-nav dropdown">
+            <img
+              src="img/logoHamburguesa.svg"
+              class="logoHamburguesa"
+              alt="logoHamburguesa"
+            />
+            <!---Desplegable categorias-->
+            <div class="desplegable">
+              <button class="btn-nav">
+                <a>Mis juegos</a
+                >
+              </button>
+              <button class="btn-nav">
+                <a>Acción</a
+                >
+              </button>
+              <button class="btn-nav">
+                <a>Aventura</a
+                >
+              </button>
+              <button class="btn-nav">
+                <a>Carreras</a
+                >
+              </button>
+              <button class="btn-nav">
+                <a>Multijugador</a
+                >
+              </button>
+              <button class="btn-nav">
+                <a>Deporte</a
+                ><img src="img/fechaAbajo.svg" class="fechaAbajo rotar" />
+              </button>
+            </div>
+            <a href="home.html">
+            <img src="img/logoPagina.svg" class="logoPagina" alt="logoPagina" /></a>
+          </div>
+          <!---->
+
+          <div class="usuario">
+            <div class="btn-menu btn-nav dropdown">
+              <div class="siri">
+                <img src="img/siri98.svg" class="avatar" /><button
+                  class="btn-nav siriDesplegable"
+                >
+                  <a>Siri98</a
+                  ><img src="img/flechaAbajo.svg" class="flechaAbajo" />
+                </button>
+              </div>
+              <!---Desplegable Siri-->
+              <div class="desplegable desplegableUsuario">
+                <buttton class="btn-nav">Ver mi perfil</buttton>
+                <img
+                  src="img/separador.svg"
+                  class="separador"
+                  alt="separador"
+                />
+                <buttton class="btn-nav">Cupones</buttton>
+                <buttton class="btn-nav">Mis juegos</buttton>
+                <img
+                  src="img/separador.svg"
+                  class="separador"
+                  alt="separador"
+                />
+                <buttton class="btn-nav">Configurar cuenta</buttton>
+                <buttton class="btn-nav">Editar perfil</buttton>
+                <img
+                  src="img/separador.svg"
+                  class="separador"
+                  alt="separador"
+                />
+              
+                <a href="index.html"><buttton class="btn-nav"> Cerrar sesión</buttton></a>
+              </div>
+            </div>
+            <!---->
+
+            <!---Desplegable Carrito-->
+            <div class="btn-menu btn-nav dropdown">
+              <button class="btn-nav">
+                <img src="img/logoCarritoMas1.svg" class="logoCarritoMas1" />
+              </button>
+              <div class="desplegable desplegableCarrito">
+                <h3>Resumen de compra</h3>
+                <img
+                  class="separador"
+                  src="img/separador.svg"
+                  class="separador"
+                  alt="separador"
+                />
+                <p>Juegos (1)</p>
+                <div class="productoPrecio">
+                  <span>Slash Royal</span><span>$2090</span>
+                </div>
+                <img class="producto" src="img/slashRoyal.jpg" />
+                <h3>Total $2090</h3>
+                <button class="continuar"><h3>Pagar</h3></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---->
+
+        <!----Barra Nav Desktop-->
+        <div class="navDesktop">
+          <div class="justifyFlexStart alignCenter marginNavLeft">
+            <!---Desplegable categorias ok-->
+            <div class="btn-menu btn-nav dropdown">
+              <img
+                src="img/logoHamburguesa.svg"
+                class="logoHamburguesa"
+                alt="logoHamburguesa"
+              />
+
+              <div class="desplegable desplegableHamburguesa">
+                <div class="item">
+                  <img class="item" src="img/misJuegos.svg" alt="logo" />
+                  <button class="btn-nav">
+                    <a>Mis juegos</a
+                    >
+                  </button>
+                </div>
+                <div class="item">
+                  <img class="item" src="img/accion.svg" alt="logo" />
+                  <button class="btn-nav">
+                    <a>Acción</a
+                    >
+                  </button>
+                </div>
+                <div class="item">
+                  <img class="item" src="img/aventura.svg" alt="logo" />
+                  <button class="btn-nav">
+                    <a>Aventura</a
+                    >
+                  </button>
+                </div>
+                <div class="item">
+                  <img class="item" src="img/carreras.svg" alt="logo" />
+                  <button class="btn-nav">
+                    <a>Carreras</a
+                    >
+                  </button>
+                </div>
+                <div class="item">
+                  <img class="item" src="img/multijugador.svg" alt="logo" />
+                  <button class="btn-nav">
+                    <a>Multijugador</a
+                    >
+                  </button>
+                </div>
+                <div class="item">
+                  <img class="item" src="img/deporte.svg" alt="logo" />
+                  <button class="btn-nav">
+                    <a>Deporte</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!---->
+            <a href="home.html">
+            <img src="img/logoPagina.svg" class="logoNav" alt="logoPagina" /></a>
+            <button class="btn-nav">
+              <a>Categorías</a
+              >
+            </button>
+            <button class="btn-nav">
+              <a>Comunidad</a
+              >
+            </button>
+            <button class="btn-nav">
+              <a>Soporte</a>
+            </button>
+
+            <div class="barraBusqueda">
+              <input class="busquedaNav" /><img
+                src="img/lupaNav.svg"
+                class="lupaNav"
+              />
+            </div>
+          </div>
+          <div class="justifyFlexEnd alignCenter marginNavRight">
+            <div class="justifyCenter alignCenter">
+              <!---Desplegable Siri-->
+              <div class="btn-menu btn-nav dropdown">
+                <div class="siri">
+                  <img src="img/siri98.svg" class="avatar" /><button
+                    class="btn-nav"
+                  >
+                    <a>Siri98</a
+                    ><img src="img/flechaAbajo.svg" class="flechaAbajo" />
+                  </button>
+                </div>
+
+                <div class="desplegable desplegableUsuario">
+                  <buttton class="btn-nav">Ver mi perfil</buttton>
+                  <img
+                    class="separadorDesplegable"
+                    src="img/separador.svg"
+                    alt="separador"
+                  />
+                  <buttton class="btn-nav">Cupones</buttton>
+                  <buttton class="btn-nav">Mis juegos</buttton>
+                  <img
+                    src="img/separador.svg"
+                    class="separadorDesplegable"
+                    alt="separador"
+                  />
+                  <buttton class="btn-nav">Configurar cuenta</buttton>
+                  <buttton class="btn-nav">Editar perfil</buttton>
+                  <img
+                    src="img/separador.svg"
+                    class="separadorDesplegable"
+                    alt="separador"
+                  />
+                <a href="index.html"><buttton class="btn-nav">Cerrar sesión</buttton></a>
+                </div>
+              </div>
+              <!---->
+            </div>
+            <!---Desplegable Carrito-->
+            <div class="btn-menu btn-nav dropdown">
+              <button class="btn-nav">
+                <img src="img/logoCarritoMas1.svg" class="logoCarritoMas1" />
+              </button>
+              <div class="desplegable desplegableCarrito">
+                <span class="btn-nav">Resumen de compra</span>
+                <img
+                  class="separadorDesplegable"
+                  src="img/separador.svg"
+                  class="separador"
+                  alt="separador"
+                />
+                <span class="btn-nav">Juegos (1)</span>
+                <div class="productoPrecio">
+                  <span class="btn-nav">Slash Royal</span
+                  ><span class="btn-nav">$2090</span>
+                </div>
+                <img class="producto btn-nav" src="img/slashRoyal.jpg" />
+                <span class="btn-nav">Total $2090</span>
+                <button class="continuarDesplegable">Pagar</button>
+              </div>
+            </div>
+          </div>
+
+          <!----->
+        </div>
+      </nav>
+    </header>
+
+    <div>
+      <div class="containerGrande">
+        <ul class="slider">
+          <img id="slide1" class="sombra" src="img/marioPortada.jpg" />
+          <img id="slide2" class="sombra" src="img/1v1Battle.jpg" />
+          <img id="slide3" class="sombra" src="img/stickman.jpg" />
+          <img id="slide4" class="sombra" src="img/zombsRoyale.png" />
+        </ul>
+        <div class="sliderNav">
+          <ul class="menu">
+            <li>
+              <a href="#slide1">
+                <svg
+                  class="circle sombra"
+                  width="15"
+                  height="15"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="7.5" cy="7.5" r="7.5" fill="#add1d2" /></svg></a>
+            </li>
+            <li>
+              <a href="#slide2">
+                <svg
+                  class="circle sombra"
+                  width="15"
+                  height="15"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="7.5" cy="7.5" r="7.5" fill="#add1d2" /></svg></a>
+            </li>
+            <li>
+              <a href="#slide3">
+                <svg
+                  class="circle sombra"
+                  width="15"
+                  height="15"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="7.5" cy="7.5" r="7.5" fill="#add1d2" /></svg></a>
+            </li>
+            <li>
+              <a href="#slide4">
+                <svg
+                  class="circle sombra"
+                  width="15"
+                  height="15"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="7.5" cy="7.5" r="7.5" fill="#add1d2" /></svg></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- carousel -->
+    <div><h3 class="h3Primero tituloCategoria">Acción</h3><hr></div>
+    <div id="carousel1" class="containerMax">
+      <div class="containerCarrusel">
+        <i id="left" class="fa-solid fa-angle-left arrowIcon"></i>
+        <div class="carousel">
+          <div class="animar animar:hover">
+            <button class="jugar">JUGAR</button>
+            <img class="sombra" src="img/badEggs.jpg" alt="img" />
+            <p>Bad Eggs</p>
+            <img class="star" src="img/estrella5.svg" alt="estrellas" />
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar jugarOff">JUGAR</button>
+            <img class="sombra" src="img/slashRoyal.jpg" alt="img" />
+            <p>Slash Royal</p>
+            <img class="star" src="img/estrella1.svg" alt="estrellas" />
+            <p class="precio">$300</p>
+            <p class="precioT">$200</p>
+            <button class="miBotonCard"><img class="carritoMas imagenBotonCard sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar jugarOff">JUGAR</button>
+            <img class="sombra" src="img/monsterLife.jpg" alt="img" />
+            <p>Moster Life</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$350</p>
+            <p class="precioT">$320</p>
+            <button class="miBotonCard"><img class="carritoMas imagenBotonCard sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar jugarOk">JUGAR</button>
+            <img class="sombra" src="img/stickman.jpg" alt="img" />
+            <p>Stickman</p>
+            <img class="star" src="img/estrella3.svg" alt="estrellas" />
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar jugarOff">JUGAR</button>
+            <img class="sombra" src="img/tankBattle.jpg" alt="img" />
+            <p>Tank Battle</p>
+            <img class="star" src="img/estrella1.svg" alt="estrellas" />
+            <p class="precio">$190</p>
+            <p class="precioT">$420</p>
+            <button class="miBotonCard"><img class="carritoMas imagenBotonCard sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar jugarOff">JUGAR</button>
+            <img class="sombra" src="img/ninjaHands.jpg" alt="img" />
+            <p>Ninja Hands</p>
+            <img class="star" src="img/estrella3.svg" alt="estrellas" />
+            <p class="precio">$600</p>
+            <p class="precioT">$890</p>
+            <button class="miBotonCard"><img class="carritoMas imagenBotonCard sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar jugarOff">JUGAR</button>
+            <img class="sombra" src="img/sandboxCity.jpg" alt="img" />
+            <p>Sandbox City</p>
+            <img class="star" src="img/estrella5.svg" alt="estrellas" />
+            <p class="precio">$500</p>
+            <p class="precioT">$620</p>
+            <button class="miBotonCard"><img class="carritoMas imagenBotonCard sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+          </div>
+        </div>
+        <i id="right" class="fa-solid fa-angle-right arrowIcon"></i>
+      </div>
+    </div>
+    <div><h3 class="tituloCategoria">Aventura</h3><hr></div>
+    <div id="carousel2" class="containerMax">
+      <div class="containerCarrusel">
+        <i id="left" class="fa-solid fa-angle-left arrowIcon"></i>
+        <div class="carousel">
+          <div class="animar animar:hover">
+            <button class="jugar">JUGAR</button>
+            <img class="sombra" src="img/senya.jpg" alt="img" />
+            <p>Senya and Oscar</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$650</p>
+            <p class="precioT">$320</p>
+            <button class="miBotonCard"><img class="carritoMas imagenBotonCard sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar">JUGAR</button>
+            <img class="sombra" src="img/voxiom.jpg" alt="img" />
+            <p>voxiom</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$520</p>
+            <p class="precioT">$630</p>
+            <button class="miBotonCard"><img class="carritoMas imagenBotonCard sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar">JUGAR</button>
+            <img class="sombra" src="img/mineClone.jpg" alt="img" />
+            <p>Mine Clone</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$120</p>
+            <p class="precioT">$560</p>
+            <button class="miBotonCard"><img class="carritoMas imagenBotonCard sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar jugarOk">JUGAR</button>
+            <img class="sombra" src="img/superCity.jpg" alt="img" />
+            <p>Super City</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar">JUGAR</button>
+            <img class="sombra" src="img/empire.jpg" alt="img" />
+            <p>Empire</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$850</p>
+            <p class="precioT">$620</p>
+            <button class="miBotonCard"><img class="carritoMas imagenBotonCard sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar">JUGAR</button>
+            <img class="sombra" src="img/heroWars.jpg" alt="img" />
+            <p>Hero Wars</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$520</p>
+            <p class="precioT">$760</p>
+            <button class="miBotonCard"><img class="carritoMas imagenBotonCard sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar">JUGAR</button>
+            <img class="sombra" src="img/stateSurvival.jpg" alt="img" />
+            <p>State Survival</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$300</p>
+            <p class="precioT">$800</p>
+            <button class="miBotonCard"><img class="carritoMas imagenBotonCard sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+          </div>         
+        </div>
+        <i id="right" class="fa-solid fa-angle-right arrowIcon"></i>
+      </div>
+    </div>
+    <div><h3 class="tituloCategoria">Carreras</h3><hr></div>
+    <div id="carousel3" class="containerMax">
+      <div class="containerCarrusel">
+        <i id="left" class="fa-solid fa-angle-left arrowIcon"></i>
+        <div class="carousel">
+          <div class="animar animar:hover">
+            <button class="jugar">JUGAR</button>
+            <img class="sombra" src="img/skyRiders.jpg" alt="img" />
+            <p>Sky Riders</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$630</p>
+            <p class="precioT">$450</p>
+            <button class="miBotonCard"><img class="carritoMas imagenBotonCard sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar">JUGAR</button>
+            <img class="sombra" src="img/ramCars.jpg" alt="img" />
+            <p>Ram Cars</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <button class="miBotonCard"><img class="carritoMas imagenBotonCard sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar">JUGAR</button>
+            <img class="sombra" src="img/highwayRacer.jpg" alt="img" />
+            <p>Highway Racer</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$450</p>
+            <button class="miBotonCard"><img class="carritoMas imagenBotonCard sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar">JUGAR</button>
+            <img class="sombra" src="img/turboCrash.jpg" alt="img" />
+            <p>Turbo Crash</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$450</p>
+            <p class="precioT">$620</p>
+            <button class="miBotonCard"><img class="carritoMas imagenBotonCard sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar">JUGAR</button>
+            <img class="sombra" src="img/driftParking.jpg" alt="img" />
+            <p>Drift Parking</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$560</p>
+            <button class="miBotonCard"><img class="carritoMas imagenBotonCard sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar">JUGAR</button>
+            <img class="sombra" src="img/trucksRace.jpg" alt="img" />
+            <p>Truck Race</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$680</p>
+            <button class="miBotonCard"><img class="carritoMas imagenBotonCard sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar">JUGAR</button>
+            <img class="sombra" src="img/crazyDrift.jpg" alt="img" />
+            <p>Crazy Drift</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$500</p>
+            <button class="miBotonCard"><img class="carritoMas imagenBotonCard sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+          </div>
+          
+        </div>
+        <i id="right" class="fa-solid fa-angle-right arrowIcon"></i>
+      </div>
+    </div>
+    <div><h3 class="tituloCategoria">Multijugador</h3><hr></div>
+    <div id="carousel4" class="containerMax">
+      <div class="containerCarrusel">
+        <i id="left" class="fa-solid fa-angle-left arrowIcon"></i>
+        <div class="carousel">
+          <div class="animar animar:hover">
+            <button class="jugar">JUGAR</button>
+            <img class="sombra" src="img/miniGolf.jpg" alt="img" />
+            <p>Mini Golf</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$460</p>
+            <button class="miBotonCard"><img class="carritoMas imagenBotonCard sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar jugarOk">JUGAR</button>
+            <img class="sombra" src="img/deadShot.jpg" alt="img" />
+            <p>Dead deadShot</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar">JUGAR</button>
+            <img class="sombra" src="img/smashKarts.jpg" alt="img" />
+            <p>Smash Karts</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$560</p>
+            <button class="miBotonCard"><img class="carritoMas imagenBotonCard sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar jugarOk">JUGAR</button>
+            <img src="img/gulper.jpg" alt="img" />
+            <p>Gulper</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar">JUGAR</button>
+            <img class="sombra" src="img/wrestle.jpg" alt="img" />
+            <p>wrestle</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$450</p>
+            <button class="miBotonCard"><img class="carritoMas imagenBotonCard sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar">JUGAR</button>
+            <img class="sombra" src="img/buildNow.jpg" alt="img" />
+            <p>Build Now</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$560</p>
+            <button class="miBotonCard"><img class="carritoMas imagenBotonCard sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar">JUGAR</button>
+            <img class="sombra" src="img/astroDud.jpg" alt="img" />
+            <p>Astro Dud</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$320</p>
+            <p class="precioT">$800</p>
+            <button class="miBotonCard"><img class="carritoMas imagenBotonCard sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+          </div>
+          
+        </div>
+        <i id="right" class="fa-solid fa-angle-right arrowIcon"></i>
+      </div>
+    </div>
+    
+    <div><h3 class="tituloCategoria">Deporte</h3><hr></div>
+    <div id="carousel5" class="containerMax">
+      <div class="containerCarrusel">
+        <i id="left" class="fa-solid fa-angle-left arrowIcon"></i>
+        <div class="carousel">
+          <div class="animar animar:hover">
+            <button class="jugar jugarOk">JUGAR</button>
+            <img class="sombra" src="img/tableTennis.jpg" alt="img" />
+            <p>Table Tennis</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar">JUGAR</button>
+            <img class="sombra" src="img/freeKick.jpg" alt="img" />
+            <p>Free Kick</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$4460</p>
+            <button class="miBotonCard"><img class="carritoMas imagenBotonCard sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar">JUGAR</button>
+            <img class="sombra" src="img/shots.jpg" alt="img" />
+            <p>shots</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$980</p>
+            <button class="miBotonCard"><img class="carritoMas imagenBotonCard sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar">JUGAR</button>
+            <img class="sombra" src="img/penaltyShooters.jpg" alt="img" />
+            <p>Penalty</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$560</p>
+            <button class="miBotonCard"><img class="carritoMas imagenBotonCard sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar">JUGAR</button>
+            <img class="sombra" src="img/basketRandom.jpg" alt="img" />
+            <p>Basket</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$450</p>
+            <button class="miBotonCard"><img class="carritoMas imagenBotonCard sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar">JUGAR</button>
+            <img class="sombra" src="img/pillSoccer.jpg" alt="img" />
+            <p>Pill Soccer</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$560</p>
+            <button class="miBotonCard"><img class="carritoMas imagenBotonCard sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+          </div>
+          <div class="animar animar:hover">
+            <img class="sombra" src="img/8ballBillliards.jpg" alt="img" />
+            <p>8 Ball Billiards</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$960</p>
+            <button class="miBotonCard"><img class="carritoMas imagenBotonCard sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+          </div>
+          
+        </div>
+        <i id="right" class="fa-solid fa-angle-right arrowIcon"></i>
+      </div>
+    </div>
+
+    <div><h3 class="tituloCategoria">Compradas</h3><hr></div>
+    <div id="carousel6" class="containerMax">
+      <div class="containerCarrusel">
+        <i id="left" class="fa-solid fa-angle-left arrowIcon"></i>
+        <div class="carousel">
+          <div class="animar animar:hover">
+            <button class="jugar jugarOk">JUGAR</button>
+            <img class="sombra" src="img/badEggs.jpg" alt="img" />
+            <p>Bad Eggs</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar jugarOk">JUGAR</button>
+            <img class="sombra" src="img/stickman.jpg" alt="img" />
+            <p>Stickman</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar jugarOk">JUGAR</button>
+            <img class="sombra" src="img/tableTennis.jpg" alt="img" />
+            <p>Table Tennis</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar jugarOk">JUGAR</button>
+            <img class="sombra" src="img/deadShot.jpg" alt="img" />
+            <p>Dead Shots</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar jugarOk">JUGAR</button>
+            <img class="sombra" src="img/gulper.jpg" alt="img" />
+            <p>Gulper</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+          </div>
+          <div class="animar animar:hover">
+            <button class="jugar jugarOk">JUGAR</button>
+            <img class="sombra" src="img/superCity.jpg" alt="img" />
+            <p>Super City</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+          </div>
+         
+          
+          
+        </div>
+        <i id="right" class="fa-solid fa-angle-right arrowIcon"></i>
+      </div>
+    </div>
+    <div><h3 class="tituloCategoria">Mas jugados</h3><hr></div>
+    
+
+    <div class="indexMasjugados">
+      <div class="masJugadosCards">
+      <div class="cardsMasJugados">
+        <div class="masJugados sombra">
+          <div class="masJugadosImagen">
+            <img src="img/bloxd.jpg" alt="juego" />
+          </div>
+          <div class="masJugadosContenido">
+            <div class="titulo">
+              <span>Bloxd.io</span>
+              <span><img src="img/estrella3solidas2vacias.svg" /></span>
+            </div>
+            <div class="precio">
+              <h3><span class="acento">$300</span></h3>
+              <button class="miBoton"><img class="imagenBoton sombra" src="img/carritoMas.svg" alt="carritoComprar"
+              /></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cardsMasJugados">
+        <div class="masJugados sombra">
+          <div class="masJugadosImagen">
+            <img src="img/farmMerge.jpg" alt="juego" />
+          </div>
+          <div class="masJugadosContenido">
+            <div class="titulo">
+              <span>GFarm Merge</span>
+              <span><img src="img/estrella3solidas2vacias.svg" /></span>
+            </div>
+            <div class="precio">
+              <h3><span class="acento">$850</span></h3>
+              <button class="miBoton"><img class="imagenBoton sombra" src="img/carritoMas.svg" alt="carritoComprar"
+                /></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cardsMasJugados">
+        <div class="masJugados sombra">
+          <div class="masJugadosImagen">
+            <img src="img/tanksArena.jpg" alt="juego" />
+          </div>
+          <div class="masJugadosContenido">
+            <div class="titulo">
+              <span>Tanks Arena.io</span>
+              <span><img src="img/estrella3solidas2vacias.svg" /></span>
+            </div>
+            <div class="precio">
+              <h3><span class="acento">$620</span></h3>
+              <button class="miBoton"><img class="imagenBoton sombra" src="img/carritoMas.svg" alt="carritoComprar"
+                /></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cardsMasJugados">
+        <div class="masJugados sombra">
+          <div class="masJugadosImagen">
+            <img src="img/jetRush.jpg" alt="juego" />
+          </div>
+          <div class="masJugadosContenido">
+            <div class="titulo">
+              <span>JetRush</span>
+              <span><img src="img/estrellas4solidas1vacia.svg" /></span>
+            </div>
+            <div class="precio">
+              <h3><span class="acento">$750</span></h3>
+              <button class="miBoton"><img class="imagenBoton sombra" src="img/carritoMas.svg" alt="carritoComprar"
+                /></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="mario">
+        <a href="juego.html">
+        <img class="sombra" src="img/indexMario.jpg" />
+      </a>
+        <div class="textoMario">
+         <p>Mario vs. Luigi</p>
+          <p>Deja caer los discos en las ranuras y consigue cuatro en línea para anotar.</p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footerContainerMaster footerOculto">
+        <div class="footerContainer footerLegales primario">
+          <a href="home.html">
+          <img class="logoPagina" src="img/logoPagina.svg" alt="logo" /></a>
+          <span class="hoverAcento">Level Up</span>
+          <span class="hoverAcento">Legales</span>
+          <span class="hoverAcento">Politica de privacidad</span>
+          <span class="hoverAcento">Imprimir</span>
+          <span class="hoverAcento">Agradecimientos</span>
+        </div>
+        <div class="footerContainer footerMoneda primario desktop">
+          <span class="blanco hoverAcento">Canjear Código</span>
+          <span class="hoverAcento">Monedas:</span>
+          <span class="acento2 hoverAcento">Patacone$</span>
+          <span class="hoverAcento">Dolar Solidario</span>
+          <span class="hoverAcento">Dolar Blue</span>
+          <span class="hoverAcento">Dolar Tarjeta</span>
+        </div>
+        <div class="footerContainer footerLenguaje primario desktop">
+          <span class="blanco hoverAcento">Lenguaje</span>
+          <span class="acento2 hoverAcento">Español</span>
+          <span class="hoverAcento">Alemán</span>
+          <span class="hoverAcento">Francés</span>
+          <span class="hoverAcento">Polaco</span>
+          <span class="hoverAcento">Inglés</span>
+        </div>
+        <div class="footerContainer footerInformacion primario">
+          <span class="blanco hoverAcento">Informacion</span>
+          <span class="hoverAcento">Blog</span>
+          <span class="hoverAcento">Dejanos tu consulta</span>
+          <span class="hoverAcento">Recursos</span>
+        </div>
+        <div class="footerContainer footerContactanos desktop">
+          <span class="blanco hoverAcento">Contactanos</span>
+          <div class="redesFooter">
+            <span class="hoverAcento"
+              ><a href="#"><img class="redes" src="img/whatsapp.svg" /></a
+            ></span>
+            <span class="hoverAcento"
+              ><a href="#"><img class="redes" src="img/twitter.svg" /></a
+            ></span>
+            <span class="hoverAcento"
+              ><a href="#"><img class="redes" src="img/instagram.svg" /></a
+            ></span>
+            <span class="hoverAcento"
+              ><a href="#"><img class="redes" src="img/twitch.svg" /></a
+            ></span>
+            <span class="hoverAcento">
+              <a href="#"><img class="redes" src="img/facebook.svg" /></a
+            ></span>
+          </div>
+        </div>
+      </div>
+      <div class="footerContainerBottom footerOculto primario desktop">
+        <span class="hoverAcento"
+          >Av. Caseros 3039, Piso 2, CP 1264, Parque Patricios, CABA</span
+        >
+        <span class="hoverAcento">Copyright © 1999-2023 Level Up S.R.L</span>
+      </div>
+
+      <!--Mobil-->
+
+<div class="footerMobil">
+  <div class="footerContainerMobil">
+    <a href="home.html">
+      <img class="logoPagina" src="img/logoPagina.svg" alt="logo" /></a>
+      <span class="footerAcento">Level Up</span>
+      <span class="footerAcento desplegar"> Legales <img src="img/flechaAbajo.svg"/></span>
+      <div class="footerDesplegable">
+      <span class="footerAcento">Politica de privacidad</span>
+      <span class="footerAcento">Imprimir</span>
+      <span class="footerAcento">Agradecimientos</span>
+      </div>
+    
+      <span class="footerAcento desplegar">Monedas <img src="img/flechaAbajo.svg"/></span>
+      <div class="footerDesplegable">
+      <span class="acento2 footerAcento">Patacone$</span>
+      <span class="footerAcento">Dolar Solidario</span>
+      <span class="footerAcento">Dolar Blue</span>
+      <span class="footerAcento">Dolar Tarjeta</span>
+      </div>
+    
+      <span class="blanco footerAcento desplegar">Lenguaje <img src="img/flechaAbajo.svg"/></span>
+      <div class="footerDesplegable">
+      <span class="acento2 footerAcento">Español</span>
+      <span class="footerAcento">Alemán</span>
+      <span class="footerAcento">Francés</span>
+      <span class="footerAcento">Polaco</span>
+      <span class="footerAcento">Inglés</span>
+    </div>
+    
+    <span  class="blanco footerAcento desplegar">Información <img src="img/flechaAbajo.svg"/></span>
+      <div class="footerDesplegable">
+      <span class="footerAcento">Blog</span>
+      <span class="footerAcento">Dejanos tu consulta</span>
+      <span class="footerAcento">Recursos</span>
+      </div>
+
+      <span class="blanco footerAcento">Contactanos: </span>
+      <div class="redesFooter">
+        <span class="footerAcento"
+          ><a href="#"><img class="redes" src="img/whatsapp.svg" /></a
+        ></span>
+        <span class="footerAcento"
+          ><a href="#"><img class="redes" src="img/twitter.svg" /></a
+        ></span>
+        <span class="footerAcento"
+          ><a href="#"><img class="redes" src="img/instagram.svg" /></a
+        ></span>
+        <span class="footerAcento"
+          ><a href="#"><img class="redes" src="img/twitch.svg" /></a
+        ></span>
+        <span class="footerAcento">
+          <a href="#"><img class="redes" src="img/facebook.svg" /></a
+        ></span>
+      </div>
+    </div>
+    <span class="footerAcento centrado"
+    >Av. Caseros 3039, Piso 2, CP 1264, Parque Patricios, CABA - Copyright © 1999-2023 Level Up S.R.L</span>
+  </div>
+   
+
+    </footer>
+    <!---Script-->
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/boton.js"></script>
+
+  </body>
+</html>
