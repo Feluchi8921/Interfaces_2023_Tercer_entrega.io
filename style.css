@@ -431,8 +431,8 @@ hr{
   position: absolute;
   bottom: 5%;
   right: 3%;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border-radius: 2px;
 }
 .carousel div p.precio {
@@ -457,8 +457,8 @@ button.miBoton, img.imagenBoton {
 }
 
 button.miBotonCard img.carritoMas.imagenBotonCard.sombra {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 .jugar {
   position: absolute;
@@ -1644,10 +1644,6 @@ hr{
   margin: 0;
   border: transparent;
   border-radius: 4px;
-}
-/*------------------Variables que uso en js-------------*/
---var--rows: 6;
---var--cols: 7;
 }
    /*-----------------------------Fuentes-----------------------------*/
 
