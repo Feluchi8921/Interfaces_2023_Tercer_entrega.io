@@ -158,10 +158,8 @@
     <div class="containerJuegos">
       <div class="breadcrumb">
         <button class="btn-nav"><a href="index.html">
-    <a href="home.html">
-          Home<img src="img/flechaAbajo.svg" class="flechaAbajo rotar" /></a></button
-        ><button class="btn-nav"><a href="juego.html">
-          4 en Línea<img src="img/flechaAbajo.svg" class="flechaAbajo rotar" /></a>
+    <a href="home.html">Home<img src="img/flechaAbajo.svg" class="flechaAbajo rotar" /></a></button>
+    <button class="btn-nav"><a href="juego.html">4 en Línea<img src="img/flechaAbajo.svg" class="flechaAbajo rotar"></a>
         </button>
       </div>
       <h2>4 en Línea: Mario vs Luigi</h2>
@@ -173,20 +171,24 @@
                   <h1>Ingresa las preferencias de juego</h1>
                   <form id="formPreferencias" class="formPreferencias">
                     <div class="inputPreferencias">
+                      <div class="jugadoresPreferencias">
                       <div class="izquierda">
-                        <p>Jugador 1</p>
-                        <select name="j1" id="j1" class="comboBox">
-                          <option value="mario">Mario</option>
-                          <option value="mickey">Mickey</option>
-                          <option value="coyote">Coyote</option>
-                        </select>
-                        <p>Jugador 2</p>
-                        <select name="j2" id="j2" class="comboBox">
-                          <option value="luigi">Luigi</option>
-                          <option value="homero">Homero</option>
-                          <option value="correcaminos">Correcaminos</option>
-                        </select>
+                      <p>Jugador 1</p>
+                      <input type="text" placeholder="Nombre">
+                      <p>Selecciona tu personaje:</p>
+                       <img src="img/chips/mario.svg" alt="marioBros">
+                       <img src="img/chips/mickey.svg" alt="correcaminos">
+                       <img src="img/chips/coyote.svg" alt="coyote">                        
                       </div>
+                      <div class="derecha">
+                        <p>Jugador 2</p>
+                      <input type="text" placeholder="Nombre">
+                        <p>Selecciona tu personaje:</p>
+                        <img src="img/chips/luigi.svg" alt="marioBros">
+                       <img src="img/chips/homero.svg" alt="correcaminos">
+                       <img src="img/chips/correcaminos.svg" alt="coyote">
+                      </div>
+                    </div>
                       <div>
                           <p>Variantes del juego</p>
                           <select name="n_juego" id="n_juego" class="comboBox">
@@ -195,6 +197,10 @@
                             <option value="6">6 en Linea</option>
                             <option value="7">7 en Linea</option>
                           </select>
+                        </div>
+                        <div class="audio">
+                        <p>Haga click si desea desactivar el sonido</p>
+                        <img src="img/audio.svg" alt="audio">
                         </div>
                         <button id="iniciar" type="submit" class="jugar" name="iniciar">
                           Jugar
