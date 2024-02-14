@@ -1878,5 +1878,13 @@ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 
 .audio{
   display: flex;
+  margin: 20px;
+  align-items: center;
+}
+
+.audio img{
+  width: 30px;
+  height: 30px;
+  align-items: center;
 }
 
