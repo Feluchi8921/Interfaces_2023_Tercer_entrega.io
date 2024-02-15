@@ -1870,10 +1870,14 @@ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 .jugadoresPreferencias{
   display: flex;
   width: 100%;
+  justify-content: space-between;
 }
 .derecha, .izquierda{
-  width: 50%;
+  width: 45%;
   display: block;
+  border: solid #9fd402 1px;
+  border-radius: 8px;
+  padding: 10px;
 }
 
 .audio{
@@ -1888,3 +1892,14 @@ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   align-items: center;
 }
 
+.login-opt{
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  display: contents;
+}
+
+.opcionJugador {
+  width: 10px;
+  height: 10px;
+}
